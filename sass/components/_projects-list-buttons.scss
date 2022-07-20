@@ -1,0 +1,10 @@
+.projects-list-buttons {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  & > .item:not(:last-child) {
+    margin-right: 8px;
+  }
+}

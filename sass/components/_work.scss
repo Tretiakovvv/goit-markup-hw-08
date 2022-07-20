@@ -1,0 +1,26 @@
+.work {
+  padding-bottom: 94px;
+}
+
+.work__title {
+  margin-bottom: 50px;
+  color: var(--primary-text-color);
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.work__list {
+  list-style: none;
+  display: flex;
+
+  & .work__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  & > .work__item {
+    flex-basis: calc(100% / 2 - 30px);
+    position: relative;
+  }
+}

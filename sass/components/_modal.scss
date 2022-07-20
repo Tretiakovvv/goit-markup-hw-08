@@ -1,0 +1,11 @@
+.modal {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  transform: scale(1) translate(-50%, -50%);
+  background-color: #ffffff;
+  transition: transform 250ms var(--transition-timing-function);
+}

@@ -1,0 +1,44 @@
+.form-label-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  user-select: none;
+}
+
+.box-icon-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 10px;
+  width: 16px;
+  height: 15px;
+
+  outline: 2px solid black;
+  outline-offset: -2px;
+  border-radius: 2px;
+  transition-property: background-color, outline;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
+  cursor: pointer;
+
+  .form-input-checkbox:checked + & {
+    background-color: var(--accent-color);
+    outline: transparent;
+  }
+}
+
+.form-icon-check {
+  fill: #ffffff;
+}
+
+.form-name-checkbox {
+  line-height: 1.7;
+  color: #757575;
+}
+
+.form-link {
+  line-height: 1.7;
+  color: var(--accent-color);
+}

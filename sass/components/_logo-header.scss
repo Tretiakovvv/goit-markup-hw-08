@@ -1,0 +1,25 @@
+.logo {
+  margin-right: 93px;
+  padding-bottom: 25px;
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.logo-secondary {
+  color: #000000;
+  &:focus,
+  &:hover {
+    color: #000000;
+  }
+}
+.nav-header .logo {
+  padding-top: 24px;
+}

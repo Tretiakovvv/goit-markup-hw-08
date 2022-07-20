@@ -1,0 +1,45 @@
+.site-nav-link {
+  position: relative;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  color: var(--title-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  fill: #757575;
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    color: var(--accent-color);
+  }
+
+  .header-mail {
+    margin-right: 10px;
+  }
+
+  .header-phone {
+    margin-right: 10px;
+  }
+}

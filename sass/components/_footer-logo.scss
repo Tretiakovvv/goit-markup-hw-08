@@ -1,7 +1,14 @@
+
+
 .footer .logo {
-  display: block;
+  display: flex;
   padding-bottom: 0;
   margin-bottom: 20px;
+  margin-right: 0;
+    justify-content: center;
+   @media screen and (min-width: 1200px){
+    display: block;
+   }
 }
 
 .footer-logo {

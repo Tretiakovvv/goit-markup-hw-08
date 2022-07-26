@@ -7,11 +7,7 @@
 }
 
 .box-icon-checkbox {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-right: 10px;
+  margin-right: 8px;
   width: 16px;
   height: 15px;
 
@@ -34,11 +30,22 @@
 }
 
 .form-name-checkbox {
-  line-height: 1.7;
-  color: #757575;
+  font-size: 12px;
+  line-height: 1.2;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .form-link {
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.2;
   color: var(--accent-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }

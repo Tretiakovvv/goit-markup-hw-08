@@ -1,26 +1,41 @@
 .footer-form {
-  display: flex;
-  align-items: end;
-  margin-left: 93px;
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 93px;
+    align-items: end;
+  }
 }
+
 .footer-label {
   margin-bottom: 20px;
-
+text-align: center;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
   color: #ffffff;
-}
 
+  @media screen and (min-width: 768px) {
+   display: flex;
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: block;
+    margin-top: 60px;
+    text-align: center;
+  }
+}
 .footer-form-email {
-  display: flex;
-  flex-direction: column;
-  margin-right: 12px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 }
 
 .footer-input {
   padding-left: 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -35,5 +50,13 @@
     font-size: 16px;
     line-height: 1.3;
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }

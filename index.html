@@ -12,7 +12,7 @@
     rel="stylesheet" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-      <link rel="stylesheet" href="./css/main.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
 
 </head>
 
@@ -35,9 +35,55 @@
           </ul>
         </nav>
 
+          <button class="mobile-menu-button" type="button" data-menu-button>
+            <svg class="mobile-menu-icon" width="24" height="16">
+              <use class="mobile-menu-burger" href="./images/icons.svg#icon-menu_24px"></use>
+              <use class="mobile-menu-close" href="./images/icons.svg#icon-close-burger"></use>
+            </svg>
+
+          </button>
+
+          <!-- мобильное меню -->
+          <div class="mobile-menu" data-menu>
+            <ul class="mobile-menu-nav list">
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-link link  current" href="./index.html">Студія</a>
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-link link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a class="mobile-menu-link link" href="">Контакти</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu-contacts list">
+              <li class="mobile-menu-contacts-item">
+                <a class="mobile-menu-link link accent" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-menu-contacts-item">
+                <a class="mobile-menu-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu-social list">
+              <li class="mobile-menu-social-item">
+                <a class="mobile-menu-link link" href="">Instagram</a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a class="mobile-menu-link link" href="">Twitter</a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a class="mobile-menu-link link" href="">Facebook</a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a class="mobile-menu-link link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+
         <ul class="header-list list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="header-link link"><svg class="header-mail" width="16" height="12">
+            <a href="mailto:info@devstudio.com" class="header-link link"><svg class="header-mail" width="16"
+                height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a>
@@ -341,10 +387,10 @@
     </section>
 
     <!-- Постоянные клиенты -->
-    <section class="section">
-      <div class="container thumb">
+    <section class="clients section">
+      <div class="container clients-thumb">
         <h3 class="clients-title">Постоянные клиенты</h3>
-        <ul class="clients-list">
+        <ul class="clients-list list">
           <li class="clients-item">
             <a href="" class="clients-link">
               <svg class="clients-icon" width="106" height="60">
@@ -394,19 +440,22 @@
   <!-- Подвал сайта -->
   <footer>
     <div class="footer">
-      <div class="container footer-thumb">
+      <div class="container footer-thumb ">
+        <div class="footer-box">
         <div class="address">
           <a lang="en" href="./index.html" class="logo">Web<span class="footer-logo">Studio</span></a>
           <address>
-            <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
+            <div class="footer-address">
+            <p class="footer-text">г. Киев, пр-т Леси Украинки, 26</p>
             <a href="mailto:info@example.com " class="footer-link">info@example.com
             </a>
             <a href="tel:+380991111111" class="footer-link">+38 099 111 11 11</a>
+            </div>
           </address>
         </div>
         <div class="social">
           <h3 class="social-title">присоединяйтесь</h3>
-          <ul class="social-list">
+          <ul class="social-list list">
             <li class="social-item">
               <a href="" class="social-link"><svg class="social-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
@@ -429,6 +478,7 @@
             </li>
           </ul>
         </div>
+        </div>
         <form class="footer-form">
           <div class="footer-form-email">
             <label for="footer-mail" class="footer-label">Подпишитесь на рассылку</label>
@@ -440,11 +490,14 @@
             </svg>
           </button>
         </form>
+        </div>
+        
 
-      </div>
+      
     </div>
   </footer>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

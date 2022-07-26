@@ -1,10 +1,26 @@
+
+
 .footer .address {
-  margin-right: 70px;
+  
+  
+ 
+  @media screen and (min-width: 1200px){
+    margin-right: 70px;
+  }
+
+  @media screen and (max-width: 767px) {
+  margin-bottom: 60px;
 }
 
-.footer-address {
+}
+
+.footer-text {
   padding-bottom: 9px;
   color: white;
   font-style: normal;
   line-height: 1.7;
+
+   
+    text-align: center;
+  
 }

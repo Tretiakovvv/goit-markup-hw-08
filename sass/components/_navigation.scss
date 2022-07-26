@@ -1,5 +1,9 @@
 .main-nav {
   display: flex;
+  
+  @media screen and (max-width: 767px){
+    align-items: center;
+  }
 }
 
 .nav-header {
@@ -8,11 +12,18 @@
 
 .site-nav {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 88px;
+  
+  align-items: center;
+
+  
 
   .item:not(:last-child) {
     margin-right: 50px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 

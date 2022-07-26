@@ -1,13 +1,29 @@
 .header-list {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-left: auto;
 
-  .item:not(:last-child) {
-    margin-right: 50px;
+  
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+   padding-top: 21px;
+   
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
+    padding-top: 32px;
+    
   }
 }
 .header-border {
   border-bottom: 1px solid #ececec;
+}
+
+.header-list .item:not(:last-child){
+  @media screen and (max-width: 1199px){
+    margin-bottom: 10px;
+  }
 }

@@ -1,8 +1,25 @@
 .projects-list-buttons {
   display: flex;
   list-style: none;
-  justify-content: center;
-  margin-bottom: 50px;
+  
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px){
+    & > .item:nth-child(n + 4) {
+      margin-top: 15px;
+    }
+
+  }
+
+  @media screen and (min-width: 768px){
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px){
+    margin-bottom: 48px;
+  }
 
   & > .item:not(:last-child) {
     margin-right: 8px;

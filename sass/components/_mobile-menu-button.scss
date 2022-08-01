@@ -15,22 +15,24 @@
     display: none;
   }
 }
-.mobile-menu-button{
-    .mobile-menu-close:hover{
-        fill: #2196f3;
-    }
+.mobile-menu-button {
+  .mobile-menu-close:hover {
+    fill: #2196f3;
+  }
 }
 
 .mobile-menu-burger {
   .mobile-menu-button.is-open & {
-    transition:250ms;
+    transition: 250ms;
     opacity: 0;
   }
 }
 .mobile-menu-close {
+  display: block;
+
   opacity: 0;
-  transition:250ms;
-   .mobile-menu-button.is-open & {
+  transition: 250ms;
+  .mobile-menu-button.is-open & {
     opacity: 1;
   }
 }

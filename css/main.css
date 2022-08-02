@@ -1439,6 +1439,11 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media screen and (max-width: 386px) {
+  .projects-list-buttons > .item:nth-child(n+3) {
+    margin-top: 15px;
+  }
+}
 @media screen and (max-width: 767px) {
   .projects-list-buttons > .item:nth-child(n+4) {
     margin-top: 15px;

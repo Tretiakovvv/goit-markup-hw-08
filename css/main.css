@@ -1100,7 +1100,6 @@ img {
 }
 
 .social-title {
-  text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -1108,6 +1107,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (max-width: 1199px) {
+  .social-title {
+    text-align: center;
+  }
 }
 
 .social-list {
